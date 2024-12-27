@@ -18,7 +18,7 @@ Syftet med programmet är att kunna använda en server och ett program så att d
 5. Starta HelloApplication
 6. Navigera i projektet med knapparna och textboxarna som finns.
 
-## **Använding **
+## **Använding**
 Fyll i ID, namn och författare och klicka på "Add book" för att lägga till en bok i ditt bibliotek
 Använd scrolldown listna för att välja vilken bok du vill ändra på eller ta bort. 
 Klicka på "Se all books" för att se alla böcker på servern. 
