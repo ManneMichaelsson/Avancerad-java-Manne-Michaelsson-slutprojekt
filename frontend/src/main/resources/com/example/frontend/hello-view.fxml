@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="624.0" prefWidth="788.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.frontend.HelloController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <Pane fx:id="btnConteiner" prefHeight="252.0" prefWidth="461.0">
+      <children>
+      
+        <Label fx:id="welcomeText" layoutX="209.0" layoutY="14.0" text="Library!" />
+         <Button fx:id="btnAddBook" layoutX="195.0" layoutY="43.0" mnemonicParsing="false" onAction="#onAddBookButtonClick" text="Add book" />
+         <TextField fx:id="textFieldId" layoutX="157.0" layoutY="88.0" promptText="Id" />
+         <TextField fx:id="textFieldName" layoutX="156.0" layoutY="122.0" promptText="Title" />
+         <TextField fx:id="textFieldAuthor" layoutX="158.0" layoutY="161.0" promptText="Author" />
+         <Pane layoutX="506.0" layoutY="24.0" prefHeight="200.0" prefWidth="200.0">
+            <children>
+               <Button fx:id="btnChangeBook" layoutX="60.0" layoutY="8.0" mnemonicParsing="false" text="Select Book" />
+               <TextField fx:id="textFieldChangeBookTitle" layoutX="26.0" layoutY="71.0" promptText="Title" />
+               <TextField fx:id="textFieldChangeBookAuthor" layoutX="26.0" layoutY="122.0" promptText="Author" />
+               <Button fx:id="btnChangeBookSave" layoutX="14.0" layoutY="156.0" mnemonicParsing="false" onAction="#onSaveChangeBookButtonClick" text="Save" />
+               <ChoiceBox fx:id="btnChoiceBoxChangeBook" layoutX="147.0" layoutY="10.0" prefHeight="26.0" prefWidth="23.0" />
+               <Button fx:id="btnDelete" layoutX="129.0" layoutY="156.0" mnemonicParsing="false" onAction="#onDeleteBookButtonClick" text="Delete" />
+            </children>
+         </Pane>
+      </children>
+   </Pane>
+   <TextArea fx:id="textArea_allBooks" prefHeight="187.0" prefWidth="322.0" />
+   <Pane prefHeight="115.0" prefWidth="110.0">
+      <children>
+         <Button fx:id="btnSeeAllBooks" layoutX="20.0" layoutY="8.0" mnemonicParsing="false" onAction="#onReadAllBookButtonClick" text="See books" />
+      </children>
+   </Pane>
+</VBox>
